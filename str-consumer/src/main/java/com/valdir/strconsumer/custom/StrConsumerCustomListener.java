@@ -21,5 +21,5 @@ public @interface StrConsumerCustomListener {
     String containerFactory() default "strContainerFactory";
 
     @AliasFor(annotation = KafkaListener.class, attribute = "groupId")
-    String gorupId() default "";
+    String groupId() default "";
 }
