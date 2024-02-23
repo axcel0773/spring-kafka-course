@@ -2,7 +2,6 @@ package com.valdir.strconsumer.custom;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.stereotype.Component;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -22,4 +21,7 @@ public @interface StrConsumerCustomListener {
 
     @AliasFor(annotation = KafkaListener.class, attribute = "groupId")
     String groupId() default "";
+
+    @AliasFor(annotation = KafkaListener.class, attribute = "errorHandler")
+    String errorHandler() default "errorCustomHandler";
 }
