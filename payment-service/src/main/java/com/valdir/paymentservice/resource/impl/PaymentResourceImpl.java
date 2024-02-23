@@ -2,7 +2,7 @@ package com.valdir.paymentservice.resource.impl;
 
 import com.valdir.paymentservice.model.Payment;
 import com.valdir.paymentservice.resource.PaymentResource;
-import com.valdir.paymentservice.services.PaymentService;
+import com.valdir.paymentservice.service.PaymentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
